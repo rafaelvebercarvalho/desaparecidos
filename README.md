@@ -1,6 +1,6 @@
 # Sistema Opensource de Desaparecidos
-Sistema open-source para gerenciamento de um banco nacional aberto de pessoas desaparecidas / encontradas
 
+Sistema open-source para gerenciamento de um banco nacional aberto de pessoas desaparecidas / encontradas
 
 # Brainstorm de Funcionalidades Básicas
 
@@ -14,8 +14,16 @@ Sistema open-source para gerenciamento de um banco nacional aberto de pessoas de
 
 - Ser uma ferramenta para Ongs, Pessoas e que o Governo (Polícias) possam utilizar.
 
-- Não receber nenhum dinheiro do governo nem ser atrelado a político e partido 
+- Não receber nenhum dinheiro do governo nem ser atrelado a político e partido
 político, sendo que a hospedagem é toda por conta do projeto (ver patrocínio).
+
+## Tecnologias que vamos usar:
+
+- Ruby 2.5.1
+- Rails 5.2.1
+- Postgres 10
+
+ Caso você tenha alguma sugestão, por favor, não deixe de ajudar.
 
 ## Mão de Obra (do que precisamos):
 
