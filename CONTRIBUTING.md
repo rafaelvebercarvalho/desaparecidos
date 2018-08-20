@@ -14,7 +14,7 @@ O Projeto vai ser construindo em formato de issues, entre em nosso Slack, tire s
 
 Por favor, note que temos código de conduta, por favor siga todos para temos uma interação saudável no projeto.
 
-### Codigo de Conduta
+### Código de Conduta
 
 Para o interesse de um ambiente aberto a todos, queremos uma comunidade para o projeto livre de preconceitos, sem brigas internas causada por qualquer tipo de assédio, independente de idade, gênero, nível de experiencia e etc...
 
@@ -25,8 +25,8 @@ Lembrando também que esse projeto nasceu para ajudar a população e também se
 Exemplo de comportamento que contribuem para um ambiente positivo:
 
 * Uso de linguagem acolhedora
-* Ter respeito com os diferentes pontos de vista e experiencia
-* Aceitando criticas construtivas
+* Ter respeito com os diferentes pontos de vista e experiência
+* Aceitando críticas construtivas
 * Focando no que é melhor para a comunidade
 * Mostrando empatia com outros membros da comunidade
 
