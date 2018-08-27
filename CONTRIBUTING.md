@@ -16,12 +16,13 @@ O Projeto vai ser construindo em formato de issues, entre em nosso Slack, tire s
 
 A nossa estrutura de código vai seguir a convenção do Ruby on Rails, vou deixar alguns links para quem tiver alguma duvida sobre isso.
 
-Um gist com um resumo => [Gist][gist]
-É um documento escrito pelo DHH => [doctrine][doctrine]
+* Um gist com um resumo => [Gist][gist]
 
-Forget fat Models (don’t allow them to become bloated)
-Keep Views dumb (so don’t put complex logic there)
-And Controllers skinny (so don’t put too much there)
+* É um documento escrito pelo DHH => [doctrine][doctrine]
+
+* Forget fat Models (don’t allow them to become bloated)
+* Keep Views dumb (so don’t put complex logic there)
+* And Controllers skinny (so don’t put too much there)
 
 Por favor, note que temos código de conduta, por favor siga todos para temos uma interação saudável no projeto.
 
