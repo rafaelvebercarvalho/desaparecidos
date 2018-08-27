@@ -4,13 +4,24 @@
 - Rails 5.2.1
 - Postgres 10
 
-### Contribuindo
+## Contribuindo
 
 Primeiramente entre no nosso [Slack][slack]
 
 Convite para o Slack [aqui][invite]
 
 O Projeto vai ser construindo em formato de issues, entre em nosso Slack, tire suas duvidas e contribua para o projeto crescer cada dia mais.
+
+#### [Convention over configuration][Convention over configuration]
+
+A nossa estrutura de código vai seguir a convenção do Ruby on Rails, vou deixar alguns links para quem tiver alguma duvida sobre isso.
+
+Um gist com um resumo => [Gist][gist]
+É um documento escrito pelo DHH => [doctrine][doctrine]
+
+Forget fat Models (don’t allow them to become bloated)
+Keep Views dumb (so don’t put complex logic there)
+And Controllers skinny (so don’t put too much there)
 
 Por favor, note que temos código de conduta, por favor siga todos para temos uma interação saudável no projeto.
 
@@ -65,3 +76,6 @@ disponível em [http://contributor-covenant.org/version/1/4][version]
 [version]: http://contributor-covenant.org/version/1/4/
 [slack]: https://opensource-br.slack.com
 [invite]: https://goo.gl/X44rAA
+[gist]: https://gist.github.com/iangreenleaf/b206d09c587e8fc6399e
+[doctrine]: https://rubyonrails.org/doctrine/
+[Convention over configuration]: https://en.wikipedia.org/wiki/Convention_over_configuration
