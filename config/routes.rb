@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "apresentacoes#index"
   resources :testes
   resources :minha_paginas
   resources :usuarios do
