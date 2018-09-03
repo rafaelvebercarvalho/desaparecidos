@@ -1,0 +1,44 @@
+<%%= form_with(model: <%= model_resource_name %>, local: true, class: 'ui form') do |form| %>
+  <%% if <%= singular_table_name %>.errors.any? %>
+    <div id="error_explanation">
+      <h2><%%= pluralize(<%= singular_table_name %>.errors.count, "error") %> prohibited this <%= singular_table_name %> from being saved:</h2>
+
+      <ul>
+      <%% <%= singular_table_name %>.errors.full_messages.each do |message| %>
+        <li><%%= message %></li>
+      <%% end %>
+      </ul>
+    </div>
+  <%% end %>
+
+  <div class="ui divider"></div>
+<% attributes.each do |attribute| -%>
+  <div class="field">
+<% if attribute.password_digest? -%>
+    <%%= form.label :password %>
+    <%%= form.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%%= form.label :password_confirmation %>
+    <%%= form.password_field :password_confirmation%>
+<% else -%>
+    <%%= form.label :<%= attribute.column_name %> %>
+    <%%= form.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+<% end -%>
+  </div>
+
+<% end -%>
+  <div class="ui divider"></div>
+  <div class="actions text-left">
+    <%%= link_to testes_path, class: 'ui basic button' do%>
+        <i class='chevron left icon'></i> VOLTAR
+     <%% end %>
+    <%%= form.submit :Gravar, class: 'ui primary button' do %>
+     <i class='save icon'></i> GRAVAR
+    <%%end%>
+  </div>
+<%% end %>
+
+
+
