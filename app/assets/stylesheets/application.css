@@ -14,8 +14,11 @@
  *= require_self
  */
 
-.text-left{
+.text-right{
     text-align: right;
+}
+.text-left{
+    text-align: left;
 }
 
 

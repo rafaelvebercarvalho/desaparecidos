@@ -1,10 +1,7 @@
 class MinhaPaginasController < ApplicationController
   before_action :set_minha_pagina, only: [:autenticacao, :show, :edit, :update, :destroy]
   def autenticacao
-    session[:autenticacao] = user
-    if(user.nil?)
-     # redirect_to login_usuarios_path
-    end
+    autenticacao
   end
 
   # GET /minha_paginas
@@ -24,6 +21,7 @@ class MinhaPaginasController < ApplicationController
 
   # GET /minha_paginas/1/edit
   def edit
+    @usuario = autenticacao
   end
 
   # POST /minha_paginas

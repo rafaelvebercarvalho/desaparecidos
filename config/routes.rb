@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     collection do
       get 'login'
       post 'entrar'
-      get 'my_page'
+      get 'edit'
     end
   end
 
