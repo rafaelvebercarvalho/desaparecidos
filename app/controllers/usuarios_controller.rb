@@ -47,8 +47,8 @@ class UsuariosController < ApplicationController
     @usuario = Usuario.new(usuario_params)
 
     respond_to do |format|
-      if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+      if @usuario.save!
+        format.html { redirect_to @usuario, notice: 'Usuário gravado com sucesso.' }
         format.json { render :show, status: :created, location: @usuario }
       else
         format.html { render :new }
