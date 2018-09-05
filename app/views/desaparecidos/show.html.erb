@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @desaparecido.usuario %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @desaparecido.nome %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @desaparecido.idade %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @desaparecido.sexo %>
+</p>
+
+<p>
+  <strong>Data nascimento:</strong>
+  <%= @desaparecido.data_nascimento %>
+</p>
+
+<p>
+  <strong>Mae:</strong>
+  <%= @desaparecido.mae %>
+</p>
+
+<p>
+  <strong>Pai:</strong>
+  <%= @desaparecido.pai %>
+</p>
+
+<%= link_to 'Editar', edit_desaparecido_path(@desaparecido) %> |
+<%= link_to 'Voltar', desaparecidos_path %>

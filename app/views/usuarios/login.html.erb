@@ -1,11 +1,16 @@
-<form class="ui large form" method="post" action="/usuarios/entrar">
-  <div class="ui stacked segment">
-    <h1>Novo Usuario</h1>
-    <%= render 'form_login', usuario: @usuario %>
+<div class="ui text container">
+  <div class="ui segments">
+    <div class="ui segment">
+      <h1>Novo Usuario</h1>
+      <%= render 'form_login', usuario: @usuario %>
+    </div>
+    <div class="ui segment" style="text-align: center">
+      <p id="notice"><%= notice %></p>
+    </div>
   </div>
-  <div class="ui message" style="text-align: center">
-    <p id="notice"><%= notice %></p>
-  </div>
+</div>
 
-</form>
+
+
+
 

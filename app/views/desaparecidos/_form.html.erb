@@ -1,10 +1,10 @@
-<%= form_with(model: desaparecida, local: true, class: 'ui form') do |form| %>
-  <% if desaparecida.errors.any? %>
+<%= form_with(model: desaparecido, local: true, class: 'ui form') do |form| %>
+  <% if desaparecido.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(desaparecida.errors.count, "error") %> prohibited this desaparecida from being saved:</h2>
+      <h2><%= pluralize(desaparecido.errors.count, "error") %> prohibited this desaparecido from being saved:</h2>
 
       <ul>
-      <% desaparecida.errors.full_messages.each do |message| %>
+      <% desaparecido.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

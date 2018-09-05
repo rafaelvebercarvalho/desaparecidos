@@ -1,4 +1,4 @@
-<%= form_with(model: usuario, local: true) do |form| %>
+<%= form_with(model: usuario, local: true, url: 'entrar', class: 'ui text large form') do |form| %>
   <% if usuario.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>

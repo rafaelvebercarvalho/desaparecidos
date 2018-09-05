@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_05_131151) do
+ActiveRecord::Schema.define(version: 2018_09_05_132839) do
 
-  create_table "desaparecidas", force: :cascade do |t|
+  create_table "desaparecidos", force: :cascade do |t|
     t.integer "usuario_id"
     t.string "nome"
     t.integer "idade"
@@ -22,14 +22,7 @@ ActiveRecord::Schema.define(version: 2018_09_05_131151) do
     t.string "pai"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["usuario_id"], name: "index_desaparecidas_on_usuario_id"
-  end
-
-  create_table "testes", force: :cascade do |t|
-    t.string "nome"
-    t.string "descricao"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["usuario_id"], name: "index_desaparecidos_on_usuario_id"
   end
 
   create_table "usuarios", force: :cascade do |t|
