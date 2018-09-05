@@ -1,0 +1,2 @@
+module DesaparecidasHelper
+end

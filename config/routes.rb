@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :desaparecidas
   root :to => "apresentacoes#index"
   resources :minha_paginas
   resources :usuarios do
