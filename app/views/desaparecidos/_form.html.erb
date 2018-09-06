@@ -1,40 +1,33 @@
+
 <%= form_with(model: desaparecido, local: true, class: 'ui form') do |form| %>
-  <% if desaparecido.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(desaparecido.errors.count, "error") %> prohibited this desaparecido from being saved:</h2>
 
-      <ul>
-      <% desaparecido.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <h2 class="ui dividing header">Fotos<a class="anchor" id="variations"></a></h2>
 
-  <div class="ui divider"></div>
+
+
   <div class="field">
-    <%= form.label :usuario_id %>
-    <%= form.text_field :usuario_id %>
+    <%= form.label :imagem %>
+    <%= form.file_field :imagem %>
   </div>
+
+  <h2 class="ui dividing header">Dados<a class="anchor" id="variations"></a></h2>
+
 
   <div class="field">
     <%= form.label :nome %>
     <%= form.text_field :nome %>
   </div>
 
-  <div class="field">
-    <%= form.label :idade %>
-    <%= form.number_field :idade %>
-  </div>
+
 
   <div class="field">
     <%= form.label :sexo %>
-    <%= form.number_field :sexo %>
+    <%= form.select :sexo, Desaparecido.sexos.keys, {}, class: 'user-roles-select' %>
   </div>
 
   <div class="field">
     <%= form.label :data_nascimento %>
-    <%= form.datetime_select :data_nascimento %>
+    <%= form.text_field :data_nascimento, type: 'date' %>
   </div>
 
   <div class="field">
@@ -47,16 +40,20 @@
     <%= form.text_field :pai %>
   </div>
 
-  <div class="ui divider"></div>
+  <a class="anchor" id="variations"></a>
+
+
+  <h2 class="ui dividing header"></h2>
   <div class="actions text-left">
-    <%= link_to testes_path, class: 'ui basic button' do%>
-        <i class='chevron left icon'></i> VOLTAR
-     <% end %>
-    <%= form.submit :Gravar, class: 'ui primary button' do %>
-     <i class='save icon'></i> GRAVAR
+
+    <%= form.button :Gravar, type: 'submit', class: 'ui primary button right floated labeled icon' do %>
+      <i class='save icon'></i> GRAVAR
     <%end%>
   </div>
+  <br>
+  <br>
+
+
+
+
 <% end %>
-
-
-

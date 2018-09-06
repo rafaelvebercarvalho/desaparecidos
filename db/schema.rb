@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_05_132839) do
+ActiveRecord::Schema.define(version: 2018_09_06_170236) do
+
+  create_table "arquivos", force: :cascade do |t|
+    t.integer "table_id"
+    t.string "table_type"
+    t.integer "usuarios_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["usuarios_id"], name: "index_arquivos_on_usuarios_id"
+  end
 
   create_table "desaparecidos", force: :cascade do |t|
     t.integer "usuario_id"
     t.string "nome"
-    t.integer "idade"
     t.integer "sexo"
     t.datetime "data_nascimento"
     t.string "mae"

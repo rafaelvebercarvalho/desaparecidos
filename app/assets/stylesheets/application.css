@@ -38,3 +38,11 @@ body {
     margin: 5em 0em 0em;
     padding: 5em 0em;
 }
+.user-roles-select option
+{
+    text-transform: capitalize;
+}
+
+.user-roles-select {
+    text-transform: capitalize;
+}

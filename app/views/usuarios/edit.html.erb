@@ -2,10 +2,10 @@
 
 <div class="ui borderless main menu">
   <%= link_to 'Perfil', edit_usuarios_path, class: 'item' %>
-  <a href="#" class="item">Desaparecidos</a>
+  <%= link_to 'Desaparecidos', new_desaparecido_path, class: 'item' %>
 </div>
 <div class="ui large form">
-  <div class="ui stacked segment">
+  <div class="ui segment">
 
     <h2 class="ui dividing header">Foto<a class="anchor" id="variations"></a></h2>
 
@@ -23,7 +23,7 @@
 
       </div>
       <div class="twelve wide column">
-        <button class="ui basic button"onclick="editar('email', '<%= @usuario.email %>', 'file')"><i class="edit icon"></i>
+        <button class="ui basic button"onclick="editar('foto', '<%= @usuario.email %>', 'file')"><i class="edit icon"></i>
           Imagen
         </button>
       </div>

@@ -1,3 +1,13 @@
-<h1>Novo Desaparecido</h1>
 
-<%= render 'form', desaparecido: @desaparecido %>
+
+
+<div class="ui borderless main menu">
+  <%= link_to 'Perfil', edit_usuarios_path, class: 'item' %>
+  <%= link_to 'Desaparecidos', new_desaparecido_path, class: 'item' %>
+</div>
+
+<div class="ui large form">
+  <div class="ui segment">
+    <%= render 'form', desaparecido: @desaparecido %>
+  </div>
+</div>
