@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :arquivos
   root :to => "apresentacoes#index"
   resources :minha_paginas

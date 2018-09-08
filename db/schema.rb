@@ -10,38 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_06_170236) do
+ActiveRecord::Schema.define(version: 2018_09_08_213730) do
 
-  create_table "arquivos", force: :cascade do |t|
-    t.integer "table_id"
-    t.string "table_type"
-    t.binary "imagem"
-    t.integer "usuarios_id"
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["usuarios_id"], name: "index_arquivos_on_usuarios_id"
-  end
-
-  create_table "desaparecidos", force: :cascade do |t|
-    t.integer "usuario_id"
-    t.string "nome"
-    t.integer "sexo"
-    t.datetime "data_nascimento"
-    t.string "mae"
-    t.string "pai"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["usuario_id"], name: "index_desaparecidos_on_usuario_id"
-  end
-
-  create_table "usuarios", force: :cascade do |t|
-    t.string "nome"
-    t.string "senha"
-    t.string "telefone"
-    t.string "email"
-    t.string "endereco"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
