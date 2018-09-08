@@ -1,0 +1,59 @@
+
+<%= form_with(model: desaparecido, local: true, class: 'ui form') do |form| %>
+
+  <h2 class="ui dividing header">Fotos<a class="anchor" id="variations"></a></h2>
+
+
+
+  <div class="field">
+    <%= form.label :imagem %>
+    <%= form.file_field :imagem %>
+  </div>
+
+  <h2 class="ui dividing header">Dados<a class="anchor" id="variations"></a></h2>
+
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+
+
+  <div class="field">
+    <%= form.label :sexo %>
+    <%= form.select :sexo, Desaparecido.sexos.keys, {}, class: 'user-roles-select' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_nascimento %>
+    <%= form.text_field :data_nascimento, type: 'date' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mae %>
+    <%= form.text_field :mae %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pai %>
+    <%= form.text_field :pai %>
+  </div>
+
+  <a class="anchor" id="variations"></a>
+
+
+  <h2 class="ui dividing header"></h2>
+  <div class="actions text-left">
+
+    <%= form.button :Gravar, type: 'submit', class: 'ui primary button right floated labeled icon' do %>
+      <i class='save icon'></i> GRAVAR
+    <%end%>
+  </div>
+  <br>
+  <br>
+
+
+
+
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: one
+  nome: MyString
+  idade: 1
+  sexo: 1
+  data_nascimento: 2018-09-05 09:28:39
+  mae: MyString
+  pai: MyString
+
+two:
+  usuario: two
+  nome: MyString
+  idade: 1
+  sexo: 1
+  data_nascimento: 2018-09-05 09:28:39
+  mae: MyString
+  pai: MyString

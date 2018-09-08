@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  soucer_id: 1
+  table_name: MyString
+  usuarios: one
+
+two:
+  soucer_id: 1
+  table_name: MyString
+  usuarios: two

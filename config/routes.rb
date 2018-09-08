@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
-  resources :testes
-  resources :minha_paginas
-  resources :usuarios do
-    collection do
-      get 'login'
-      post 'entrar'
-      get 'my_page'
-    end
-  end
 
+  devise_for :users
+  resources :arquivos
+  root :to => "apresentacoes#index"
+  resources :minha_paginas
+
+  resources :desaparecidos
   resources :apresentacoes do
     collection do
       get 'colaboradores'

@@ -5,7 +5,25 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
+  <script src="https://semantic-ui.com/javascript/library/detect.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/jquery.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/clipboard.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/cookie.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/easing.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/highlight.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/history.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/underscore.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/library/tablesort.min.js"></script>
+
+  <script src="https://semantic-ui.com/dist/semantic.min.js"></script>
+  <script src="https://semantic-ui.com/javascript/docs.js"></script>
+
+  <link rel="stylesheet" type="text/css" class="ui" href="https://semantic-ui.com/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" >
+
+
+  <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/stylesheets/docs.css">
+  <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/stylesheets/rtl.css">
   <%= stylesheet_link_tag 'application', media: 'all' %>
 
 </head>
@@ -17,9 +35,17 @@
       <img class="logo" src="https://semantic-ui.com/examples/assets/images/logo.png">
       Desaparecidos
     </a>
+    <div class="ui simple dropdown item right floated">
+        <i class="cog icon"></i>
+      <div class="menu">
+
+        <div class="header">Configurar</div>
+        <a class="item" href="/usuarios/edit">Editar perfil</a>
+      </div>
+    </div>
   </div>
 </div>
-<div class="ui main text container">
+<div class="ui main container">
   <%= yield %>
 </div>
 </body>
@@ -29,3 +55,4 @@
 <%= javascript_include_tag 'application' %>
 
 </html>
+

@@ -10,6 +10,7 @@
       <%= link_to 'Apresentação', apresentacoes_path, class: 'item active' %>
       <%= link_to 'Colaboradores', colaboradores_apresentacoes_path, class: 'item' %>
       <%= link_to 'Patrocinadores', patrocinadores_apresentacoes_path, class: 'item'  %>
+      <%= link_to 'Buscar', desaparecidos_path, class: 'item'  %>
     </div>
   </div>
 
@@ -18,8 +19,8 @@
       Desaparecidos
     </h1>
     <h2>Conheça as pessoas que colaboraram para esse projeto.</h2>
-    <%= link_to 'Logar', login_usuarios_path, class: 'ui huge primary button'  %>
-    <%= link_to 'Cadastrar', new_usuario_path, class: 'ui huge primary button'  %>
+    <%= link_to 'Logar', user_session_path, class: 'ui huge primary button'  %>
+    <%= link_to 'Cadastrar', new_user_registration_path, class: 'ui huge primary button'  %>
   </div>
 
 </div>
