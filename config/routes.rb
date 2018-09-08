@@ -3,14 +3,6 @@ Rails.application.routes.draw do
   resources :arquivos
   root :to => "apresentacoes#index"
   resources :minha_paginas
-  resources :usuarios do
-    collection do
-      get 'login'
-      post 'entrar'
-      get 'edit'
-      get 'meus_desaparecidos'
-    end
-  end
 
   resources :desaparecidos
   resources :apresentacoes do

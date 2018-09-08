@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2018_09_06_170236) do
   create_table "arquivos", force: :cascade do |t|
     t.integer "table_id"
     t.string "table_type"
+    t.binary "imagem"
     t.integer "usuarios_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
